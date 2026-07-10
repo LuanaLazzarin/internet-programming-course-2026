@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">Olá Mundo!</h1>
+    <button onclick="mudarTexto()">Clique Aqui</button>
+    <!-- <button onmousemove="mudarTexto()">Clique Aqui</button> -->
+
+    <ul id="minhaLista"></ul>
+    <button id="add">Adicionar Item</button>
+
+    <script>
+        const lista = document.getElementById("minhaLista");
+        const botao = document.getElementById("add");
+        let valor = 0;
+        const display = document.getElementById("contador");
+        const interruptor = document.getElementById("btnSoma");
+        const img = document.getElementById("lampada");
+        let acesa = false;
+        const bthInterruptor = document.getElementById
+
+        interruptor.addEventListener("click", () => {});
+
+
+
+        botao.addEventListener("click", () => { 
+            const novoItem = document.createElement("li"); // 1. Criar o elemento
+            novoItem.innerText = "Novo Item na Lista"; // 2. Dar conteúdo ao elemento
+            lista.appendChild(novoItem); // 3. Adicionar na página
+        });
+
+        function exemplo() { alert("Texto alterado!") }
+
+        function mudarTexto() {
+            const titulo = document.getElementById("titulo");
+            titulo.innerText = "JavaScript funcionando!";
+            titulo.style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>
