@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+/* Configuração do contêiner secundário, apenas para teste */
+.container2{
+    width: 40%;
+    margin: 20px auto;
+    
+}
+
+
+/* Configuração do cabeçalho */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Configuração do menu */
+nav ul {
+    display: flex; /* Define o layout flexível para os itens do menu */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Adiciona um espaço de 20px entre os itens do menu */
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Configuração dos itens do menu */
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Configuração dos links do menu */
+nav a{
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Configuração do hover nos links do menu */
+nav a:hover {
+    color: #ff6600;
+    /*font-size: 25px;*/
+     background-color: darkorchid; /*cor de fundo do link quando o mouse passar por cima* */
+}
+
+/* Configuração da seção principal */
+section{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+
+ /* Configuração do rodapé, onde ficam as informações finais do site */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Configuração nos espaços dos cards, onde ficam todos os projetos */
+.cards{
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    justify-content: center;
+    text-align: center;
+}
+
+/* Configuração de cards internos, que representam cada projeto indivudual */
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+} 
+
+/* Imagem do card */
+.card img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+/* Efeito de hover nos cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Layout adaptável para telas menores */
+@media(max-width: 768px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
